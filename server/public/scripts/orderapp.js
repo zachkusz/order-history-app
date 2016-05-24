@@ -2,8 +2,6 @@ var application = angular.module('myApp', []);
 
 application.controller('CustomerList', ['$scope', '$http', function($scope, $http) {
 
-  console.log('angular controller!');
-
   $scope.customerList = [];
 
   $scope.getCustomers = function() {
@@ -29,11 +27,5 @@ application.controller('CustomerList', ['$scope', '$http', function($scope, $htt
 
     });
   }
-
-
-
-
-
-
 
 }]);
